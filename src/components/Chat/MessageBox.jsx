@@ -20,7 +20,7 @@ const MessageBox = () => {
 
     const sendToServer = async (message) => {
       setIsThinking(true);
-      const response = await fetch("https://gptbackendmschamp.azurewebsites.net/", {
+      const response = await fetch("https://gptbackendmschamp.azurewebsites.net/api/ask-bot", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
